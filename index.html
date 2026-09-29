@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dan Smith, Esq. | Out-of-Network Reimbursement Recovery for Florida Providers</title>
+<meta name="description" content="Dan Smith, Esq. of Morgan &amp; Morgan Healthcare Litigation recovers underpaid out-of-network claims for Florida physicians and hospital groups through federal IDR and Florida state court. Contingency fee. Complimentary claims review.">
+<link rel="canonical" href="https://idrpros.com/">
+<meta name="theme-color" content="#14243A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IDR Is Just the Beginning | Dan Smith, Esq.">
+<meta property="og:description" content="How Florida law recovers what IDR cannot. Out-of-network reimbursement recovery for Florida providers, on contingency.">
+<meta property="og:url" content="https://idrpros.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin-var.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/ibm-plex-sans-latin-var.woff2" crossorigin>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Attorney",
+  "name": "Dan Smith, Esq.",
+  "description": "Out-of-network reimbursement recovery for Florida healthcare providers: federal IDR and Florida state court litigation.",
+  "url": "https://idrpros.com/",
+  "telephone": "+1-813-523-3134",
+  "email": "dansmith@forthepeople.com",
+  "areaServed": { "@type": "State", "name": "Florida" },
+  "worksFor": { "@type": "LegalService", "name": "Morgan & Morgan", "url": "https://www.forthepeople.com/" },
+  "knowsAbout": ["No Surprises Act", "Independent Dispute Resolution", "Fla. Stat. 627.64194", "Fla. Stat. 641.513", "ERISA preemption", "Out-of-network reimbursement"]
+}
+</script>
+<style>
+@font-face { font-family: "Newsreader"; font-style: normal; font-weight: 400 700; font-display: swap; src: url(/fonts/newsreader-latin-var.woff2) format("woff2"); }
+@font-face { font-family: "Newsreader"; font-style: italic; font-weight: 400; font-display: swap; src: url(/fonts/newsreader-latin-italic-400.woff2) format("woff2"); }
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 400 600; font-display: swap; src: url(/fonts/ibm-plex-sans-latin-var.woff2) format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 500; font-display: swap; src: url(/fonts/ibm-plex-mono-latin-500.woff2) format("woff2"); }
+
+:root {
+  --cream: #F7F2E8;
+  --cream-deep: #EFE7D8;
+  --white: #FFFFFF;
+  --navy: #14243A;
+  --navy-2: #1E3350;
+  --ink: #1B2430;
+  --muted: #5B6573;
+  --red: #B4232C;
+  --red-dark: #8F1B22;
+  --red-soft: #F6E3E1;
+  --line: #DCD3C3;
+  --line-navy: #2E4462;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --wrap: 1160px;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--cream); color: var(--ink); font: 400 17px/1.65 var(--sans); }
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; color: var(--navy); line-height: 1.12; margin: 0; letter-spacing: -0.01em; }
+p { margin: 0 0 1em; }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+.eyebrow { font: 500 12px/1.4 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.eyebrow::before { content: ""; width: 18px; height: 2px; background: currentColor; }
+.skip, .sr { position: absolute; left: -9999px; }
+.skip:focus { left: 16px; top: 16px; background: var(--white); padding: 8px 12px; z-index: 100; }
+:focus-visible { outline: 3px solid var(--red); outline-offset: 2px; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 22px; border-radius: 8px; font: 600 16px/1 var(--sans); text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: background .15s, border-color .15s, color .15s; }
+.btn-red { background: var(--red); color: var(--white); }
+.btn-red:hover { background: var(--red-dark); }
+.btn-ghost { border-color: var(--navy); color: var(--navy); background: transparent; }
+.btn-ghost:hover { background: var(--navy); color: var(--white); }
+
+/* Header */
+.top-rule { height: 4px; background: var(--red); }
+header.site { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 50; }
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 72px; }
+.brand { text-decoration: none; display: flex; flex-direction: column; line-height: 1.15; }
+.brand strong { font: 600 22px/1.1 var(--serif); color: var(--navy); }
+.brand span { font: 500 11px/1.4 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+.head-actions { display: flex; align-items: center; gap: 18px; }
+.head-phone { font: 600 16px/1 var(--sans); color: var(--navy); text-decoration: none; white-space: nowrap; }
+.head-phone:hover { color: var(--red); }
+header.site .btn { padding: 11px 16px; font-size: 15px; }
+
+/* Hero */
+.hero { background: var(--cream); padding: 72px 0 80px; border-bottom: 1px solid var(--line); }
+.hero .wrap { display: grid; grid-template-columns: 1.25fr 1fr; gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(40px, 5.6vw, 66px); }
+.hero h1 em { font-style: italic; font-weight: 400; color: var(--red); }
+.hero .lede { font-size: 20px; color: var(--ink); max-width: 36em; margin: 22px 0 30px; }
+.hero .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero .byline { margin-top: 28px; font-size: 15px; color: var(--muted); }
+.hero .byline b { color: var(--navy); font-weight: 600; }
+
+.results-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 1px 0 var(--line), 0 18px 40px -24px rgba(20,36,58,.35); overflow: hidden; }
+.results-card header { background: var(--navy); color: var(--white); padding: 14px 22px; font: 500 12px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; display: flex; justify-content: space-between; }
+.results-card header i { font-style: normal; color: #9FB0C6; }
+.results-card dl { margin: 0; display: grid; grid-template-columns: 1fr 1fr; }
+.results-card dl > div { padding: 22px; border-top: 1px solid var(--line); }
+.results-card dl > div:nth-child(odd) { border-right: 1px solid var(--line); }
+.results-card dl > div:nth-child(-n+2) { border-top: 0; }
+.results-card dt { font: 600 38px/1 var(--serif); color: var(--red); }
+.results-card dd { margin: 8px 0 0; font-size: 14px; line-height: 1.45; color: var(--muted); }
+.results-card .fine { padding: 12px 22px; background: var(--cream); border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); font-style: italic; }
+
+/* Sections */
+section { padding: 88px 0; }
+section.white { background: var(--white); border-bottom: 1px solid var(--line); }
+section.navy { background: var(--navy); color: #DCE3EC; }
+section.navy h2, section.navy h3 { color: var(--white); }
+section.navy .prong h3, section.navy form.intake h3 { color: var(--navy); }
+section.navy .eyebrow { color: #F08A8F; }
+.sec-head { max-width: 760px; margin-bottom: 44px; }
+.sec-head h2 { font-size: clamp(30px, 3.8vw, 44px); }
+.sec-head p { font-size: 19px; margin-top: 16px; color: var(--muted); }
+section.navy .sec-head p { color: #B7C3D3; }
+
+/* National numbers */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-radius: var(--radius); background: var(--cream); }
+.stat { padding: 28px 24px; border-left: 1px solid var(--line); }
+.stat:first-child { border-left: 0; }
+.stat b { display: block; font: 600 44px/1 var(--serif); color: var(--navy); }
+.stat span { display: block; margin-top: 10px; font-size: 15px; line-height: 1.5; color: var(--muted); }
+.pivot { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+.pivot p { font-size: 18px; }
+.pivot .kicker { font: 600 28px/1.25 var(--serif); color: var(--navy); border-left: 4px solid var(--red); padding-left: 20px; }
+
+/* Prongs */
+.flow { display: grid; grid-template-columns: 1fr auto 1fr; gap: 0; align-items: stretch; }
+.flow-src { grid-column: 1 / -1; justify-self: center; background: var(--navy-2); border: 1px solid var(--line-navy); border-radius: 999px; padding: 12px 24px; font: 500 13px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--white); text-align: center; }
+.flow-branch { grid-column: 1 / -1; height: 44px; position: relative; }
+.flow-branch::before { content: ""; position: absolute; left: 25%; right: 25%; top: 22px; border-top: 2px solid var(--line-navy); }
+.flow-branch::after { content: ""; position: absolute; left: 50%; top: 0; height: 22px; border-left: 2px solid var(--line-navy); }
+.flow-branch i { position: absolute; top: 22px; height: 22px; border-left: 2px solid var(--line-navy); }
+.flow-branch i:first-child { left: 25%; } .flow-branch i:last-child { left: 75%; }
+.prongs { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.prong { background: var(--white); color: var(--ink); border-radius: var(--radius); padding: 32px; border-top: 5px solid var(--red); }
+.prong .tag { font: 500 12px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--red); }
+.prong h3 { font-size: 28px; margin: 10px 0 14px; }
+.prong ul { margin: 18px 0 0; padding: 0; list-style: none; }
+.prong li { padding: 10px 0 10px 28px; border-top: 1px solid var(--line); position: relative; font-size: 16px; }
+.prong li::before { content: ""; position: absolute; left: 4px; top: 18px; width: 12px; height: 7px; border-left: 2px solid var(--red); border-bottom: 2px solid var(--red); transform: rotate(-45deg); }
+.nothing-drops { margin-top: 24px; display: flex; gap: 24px; align-items: center; background: var(--navy-2); border: 1px solid var(--line-navy); border-radius: var(--radius); padding: 24px 28px; }
+.nothing-drops b { font: 600 48px/1 var(--serif); color: var(--white); white-space: nowrap; }
+.nothing-drops p { margin: 0; color: #DCE3EC; font-size: 17px; }
+.nothing-drops strong { color: var(--white); }
+
+/* Florida law */
+.fl-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: start; }
+.point { padding: 22px 0; border-top: 1px solid var(--line); }
+.point:first-child { border-top: 0; padding-top: 0; }
+.point h3 { font-size: 22px; margin-bottom: 8px; }
+.point p { margin: 0; color: var(--ink); }
+.point .cite { font-weight: 600; font-size: 15px; color: var(--navy); background: var(--cream); padding: 1px 6px; border-radius: 4px; white-space: nowrap; }
+.compare { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; font-size: 15px; }
+.compare-label { text-align: left; font: 500 12px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding-bottom: 12px; }
+.compare th, .compare td { padding: 14px 16px; text-align: left; vertical-align: top; border-top: 1px solid var(--line); }
+.compare thead th { border-top: 0; background: var(--navy); color: var(--white); font-weight: 600; font-size: 14px; }
+.compare thead th.fl { background: var(--red); }
+.compare tbody th { font-weight: 600; color: var(--navy); width: 30%; background: var(--cream); }
+.compare td.fl { background: #FBF6F5; color: var(--ink); font-weight: 500; }
+.carriers { margin-top: 36px; background: var(--white); border: 1px solid var(--line); border-left: 5px solid var(--red); border-radius: var(--radius); padding: 28px 30px; }
+.carriers p { margin: 0; font-size: 18px; }
+.carriers strong { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--navy); display: block; margin-bottom: 8px; line-height: 1.3; }
+.carrier-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.carrier-row span { font: 500 13px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--navy); border: 1px solid var(--line); background: var(--cream); padding: 9px 12px; border-radius: 999px; }
+
+/* ERISA */
+.erisa { display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: center; }
+.erisa h2 { font-size: clamp(30px, 3.6vw, 42px); }
+.erisa blockquote { margin: 0; font: 400 italic clamp(26px, 3vw, 34px)/1.3 var(--serif); color: var(--navy); }
+.erisa blockquote b { font-style: normal; font-weight: 600; color: var(--red); }
+.erisa .body p { font-size: 18px; }
+.erisa-facts { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); }
+.erisa-facts div { padding: 22px 26px; border-top: 1px solid var(--line); display: flex; align-items: baseline; gap: 16px; }
+.erisa-facts div:first-child { border-top: 0; }
+.erisa-facts b { font: 600 34px/1 var(--serif); color: var(--red); min-width: 4.2em; }
+.erisa-facts span { font-size: 15px; color: var(--muted); line-height: 1.45; }
+.disclaim { font-size: 14px; font-style: italic; color: var(--muted); margin-top: 20px; }
+
+/* Who */
+.who { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.who-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; }
+.who-card h3 { font-size: 24px; margin-bottom: 18px; }
+.spec { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.spec span { display: flex; align-items: center; gap: 10px; background: var(--cream); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; font-weight: 500; font-size: 15px; color: var(--navy); }
+.spec span::before { content: ""; flex: none; width: 14px; height: 14px; background: linear-gradient(var(--red),var(--red)) center/14px 4px no-repeat, linear-gradient(var(--red),var(--red)) center/4px 14px no-repeat; }
+.fee { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 6px 0 18px; }
+.fee div { text-align: center; border: 1px solid var(--line); background: var(--cream); border-radius: 8px; padding: 18px 8px; }
+.fee b { display: block; font: 600 15px/1.2 var(--sans); color: var(--navy); }
+.fee div span { display: block; font: 600 26px/1 var(--serif); color: var(--red); margin-bottom: 6px; }
+.fee-line { font: 600 22px/1.3 var(--serif); color: var(--navy); margin: 0; }
+
+/* Contact */
+.contact { display: grid; grid-template-columns: 1fr 1.15fr; gap: 56px; align-items: start; }
+.urgent { font-size: 18px; color: #DCE3EC; }
+.direct { margin-top: 28px; border-top: 1px solid var(--line-navy); }
+.direct a { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 0; border-bottom: 1px solid var(--line-navy); text-decoration: none; color: var(--white); font: 600 20px/1.2 var(--sans); }
+.direct a small { font: 500 12px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: #9FB0C6; }
+.direct a:hover { color: #F08A8F; }
+.person { margin-top: 28px; font-size: 15px; color: #B7C3D3; line-height: 1.55; }
+.person b { color: var(--white); font-family: var(--serif); font-size: 20px; font-weight: 600; display: block; }
+
+form.intake { background: var(--white); color: var(--ink); border-radius: var(--radius); padding: 32px; border-top: 5px solid var(--red); }
+form.intake h3 { font-size: 26px; margin-bottom: 6px; }
+form.intake > p { color: var(--muted); font-size: 15px; }
+.fields { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field.full { grid-column: 1 / -1; }
+.field label { font-size: 14px; font-weight: 600; color: var(--navy); }
+.field label i { font-style: normal; font-weight: 400; color: var(--muted); }
+.field input, .field select, .field textarea { font: 400 16px/1.4 var(--sans); color: var(--ink); background: var(--white); border: 1px solid #C9C0AF; border-radius: 6px; padding: 11px 12px; width: 100%; }
+.field textarea { min-height: 96px; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 3px rgba(20,36,58,.15); }
+.phi { margin: 18px 0; display: flex; gap: 12px; background: var(--red-soft); border: 1px solid #E8C4C1; border-radius: 8px; padding: 12px 14px; font-size: 14px; line-height: 1.5; color: var(--red-dark); }
+.phi b { white-space: nowrap; }
+form.intake .btn { width: 100%; }
+.form-note { margin: 14px 0 0; font-size: 13px; color: var(--muted); line-height: 1.5; }
+.form-status { display: none; margin-top: 16px; padding: 14px; border-radius: 8px; font-size: 15px; }
+.form-status.ok { display: block; background: #E6F1EA; color: #1F5134; }
+.form-status.err { display: block; background: var(--red-soft); color: var(--red-dark); }
+.hp { position: absolute; left: -9999px; }
+
+/* Footer */
+footer.site { background: #0E1A2B; color: #9FB0C6; padding: 48px 0 40px; font-size: 13px; line-height: 1.6; }
+footer.site .wrap { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; }
+footer.site strong { color: var(--white); font-family: var(--serif); font-size: 18px; font-weight: 600; }
+footer.site p { margin: 0 0 10px; }
+footer.site a { color: #DCE3EC; }
+
+/* Responsive */
+@media (max-width: 980px) {
+  .hero .wrap, .fl-grid, .erisa, .contact, .pivot { grid-template-columns: 1fr; gap: 40px; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .stat:nth-child(3) { border-left: 0; }
+  .stat:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .who { grid-template-columns: 1fr; }
+  footer.site .wrap { grid-template-columns: 1fr; gap: 20px; }
+}
+@media (max-width: 720px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 16px; }
+  section { padding: 64px 0; }
+  .hero { padding: 48px 0 56px; }
+  .hero .lede { font-size: 18px; }
+  .head-phone { display: none; }
+  header.site .wrap { min-height: 64px; }
+  .brand strong { font-size: 19px; }
+  .brand span { font-size: 10px; }
+  .prongs, .fields { grid-template-columns: 1fr; }
+  .flow-branch { display: none; }
+  .flow-src { margin-bottom: 16px; }
+  .prong, .who-card, form.intake { padding: 24px 20px; }
+  .results-card dt { font-size: 32px; }
+  .results-card dl > div { padding: 18px 16px; }
+  .stat { padding: 22px 16px; }
+  .stat b { font-size: 36px; }
+  .nothing-drops { flex-direction: column; align-items: flex-start; gap: 10px; padding: 22px 20px; }
+  .spec { grid-template-columns: 1fr; }
+  .phi { flex-direction: column; gap: 4px; }
+  .compare { font-size: 14px; }
+  .compare th, .compare td { padding: 12px 10px; }
+  .erisa-facts div { padding: 18px 18px; }
+  .erisa-facts b { font-size: 28px; }
+}
+@media (max-width: 420px) {
+  header.site .btn { padding: 10px 12px; font-size: 14px; }
+  .brand span { display: none; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="top-rule"></div>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Dan Smith, Esq., home">
+      <strong>Dan Smith, Esq.</strong>
+      <span>Morgan &amp; Morgan · Healthcare Litigation</span>
+    </a>
+    <div class="head-actions">
+      <a class="head-phone" href="tel:+18135233134">(813) 523-3134</a>
+      <a class="btn btn-red" href="#review">Claims review</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Out-of-network reimbursement · Florida</div>
+      <h1 id="hero-title">IDR is just the beginning. <em>Florida law recovers what IDR cannot.</em></h1>
+      <p class="lede">Dan Smith represents Florida physicians, physician groups, and hospital-based departments against Blue Cross, United, Cigna, Aetna, and other carriers. Every underpaid claim is pursued through federal IDR, Florida state court, or both.</p>
+      <div class="cta-row">
+        <a class="btn btn-red" href="#review">Request a complimentary claims review</a>
+        <a class="btn btn-ghost" href="tel:+18135233134">Call (813) 523-3134</a>
+      </div>
+      <p class="byline"><b>Contingency fee.</b> No hourly billing, no retainer, no upfront cost.</p>
+    </div>
+
+    <aside class="results-card" aria-label="Recent results">
+      <header><span>Our results</span><i>IDR + Florida litigation</i></header>
+      <dl>
+        <div><dt>90%+</dt><dd>IDR win rate</dd></div>
+        <div><dt>$1M+</dt><dd>Recovered in underpaid claims for a single hospital group</dd></div>
+        <div><dt>3×</dt><dd>Prior payment levels secured in new in-network agreements</dd></div>
+        <div><dt>4 yrs</dt><dd>Lookback on old out-of-network claims</dd></div>
+      </dl>
+      <div class="fine">Past results do not guarantee future outcomes.</div>
+    </aside>
+  </div>
+</section>
+
+<!-- THE SYSTEM IS WORKING -->
+<section class="white" aria-labelledby="system-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The No Surprises Act</div>
+      <h2 id="system-title">The system is working, for providers who know how to use it.</h2>
+      <p>The No Surprises Act gave providers a federal arbitration process to challenge insurer underpayment. Nationally, the numbers favor providers.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>88%</b><span>of IDR determinations nationally go to the provider</span></div>
+      <div class="stat"><b>2.7–4.5×</b><span>average award, measured against the insurer-calculated median in-network rate</span></div>
+      <div class="stat"><b>300,000</b><span>disputes filed per month</span></div>
+      <div class="stat"><b>17×</b><span>the volume regulators originally projected</span></div>
+    </div>
+    <div class="pivot">
+      <p><strong>Our results are stronger.</strong> Our IDR win rate exceeds 90%. We have recovered multiples of Medicare rates for specialties from hospitalist groups to trauma surgeons. And when we use litigation outcomes to negotiate in-network agreements, we have secured rates three times previous payment levels.</p>
+      <p class="kicker">But IDR is only half the story. The real story is Florida.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TWO PRONGS -->
+<section class="navy" aria-labelledby="prongs-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Two prongs</div>
+      <h2 id="prongs-title">Every claim gets pursued.</h2>
+      <p>Our software connects to the billing system you already use and sorts every underpaid claim into the forum where it recovers the most.</p>
+    </div>
+    <div class="flow" aria-hidden="true">
+      <div class="flow-src">Your underpaid out-of-network claims</div>
+      <div class="flow-branch"><i></i><i></i></div>
+    </div>
+    <div class="prongs">
+      <article class="prong">
+        <div class="tag">Prong 1</div>
+        <h3>Federal IDR for eligible claims</h3>
+        <p>Our proprietary software integrates directly with your current billing system to identify which claims are IDR-eligible. Our team prepares submissions calibrated to win.</p>
+        <ul>
+          <li>Eligibility identified automatically from your billing data</li>
+          <li>Submissions prepared by our team</li>
+          <li>Unpaid awards enforced through Florida civil litigation, not CMS complaints</li>
+        </ul>
+      </article>
+      <article class="prong">
+        <div class="tag">Prong 2</div>
+        <h3>Florida litigation for everything else</h3>
+        <p>The same software identifies which claims are eligible for Florida state court action and appeal.</p>
+        <ul>
+          <li>The 17–20% of disputes found ineligible for IDR nationally, recovered through direct lawsuits under Florida's statutory framework</li>
+          <li>Underpaid out-of-network claims that were never IDR-eligible, recovered too</li>
+        </ul>
+      </article>
+    </div>
+    <div class="nothing-drops">
+      <b>4 years</b>
+      <p><strong>No claim falls through the cracks.</strong> We can go back four years on old out-of-network claims, so revenue you may have written off is still recoverable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FLORIDA LAW -->
+<section aria-labelledby="fl-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Florida law</div>
+      <h2 id="fl-title">Why Blue Cross, United, Cigna, and Aetna settle.</h2>
+      <p>Long before Congress passed the No Surprises Act, Florida enacted statutes creating independent, enforceable rights for nonparticipating providers. In January 2022, CMS formally recognized those laws as "specified state laws" that control over the federal default.</p>
+    </div>
+    <div class="fl-grid">
+      <div>
+        <div class="point">
+          <h3>Florida's reimbursement standard favors providers.</h3>
+          <p>Under <span class="cite">Fla. Stat. § 627.64194</span> and <span class="cite">§ 641.513(5)</span>, insurers must reimburse nonparticipating providers at the lesser of the provider's charges, the usual and customary charges for similar services in the community, or a mutually agreed amount. Florida law requires the very factors that support higher reimbursement.</p>
+        </div>
+        <div class="point">
+          <h3>Providers can sue directly in state court.</h3>
+          <p><span class="cite">Section 627.64194(6)</span> gives providers a choice: resolve disputes through voluntary state arbitration, or go directly to a court of competent jurisdiction. Full discovery. Jury trials. Judicial review. Tools that no arbitration process provides.</p>
+        </div>
+      </div>
+      <div>
+      <div class="compare-label">Federal IDR compared with Florida law</div>
+      <table class="compare">
+        <thead>
+          <tr><th scope="col"><span class="sr">&nbsp;</span></th><th scope="col">Federal IDR</th><th scope="col" class="fl">Florida law</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Payment anchor</th><td>Insurer-calculated QPA</td><td class="fl">Usual and customary charges in the community</td></tr>
+          <tr><th scope="row">Billed charges</th><td>Consideration prohibited</td><td class="fl">Part of the statutory standard</td></tr>
+          <tr><th scope="row">Forum</th><td>Arbitration</td><td class="fl">Arbitration or state court, provider's choice</td></tr>
+          <tr><th scope="row">Discovery</th><td>None</td><td class="fl">Full discovery</td></tr>
+          <tr><th scope="row">Jury trial</th><td>No</td><td class="fl">Yes</td></tr>
+          <tr><th scope="row">Review</th><td>Very limited</td><td class="fl">Judicial review and appeal</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="carriers">
+      <p><strong>We have litigated hundreds of lawsuits across thousands of claims against major carriers in Florida, all resolved by settlement or plaintiff judgment.</strong>Insurers settle because a 90%+ IDR win rate, provider-favorable state reimbursement standards, direct court access, and a firm that will litigate to conclusion make settlement the rational choice.</p>
+      <div class="carrier-row" aria-label="Carriers litigated against">
+        <span>Blue Cross</span><span>United</span><span>Cigna</span><span>Aetna</span><span>Other major carriers</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ERISA -->
+<section class="white" aria-labelledby="erisa-title">
+  <div class="wrap">
+    <div class="erisa">
+      <div class="body">
+        <div class="eyebrow">ERISA preemption</div>
+        <h2 id="erisa-title">For many providers, ERISA is where claims go to die. <span style="color:var(--red)">Not here.</span></h2>
+        <p style="margin-top:20px">Insurers have used ERISA preemption as a shield for decades. We have obtained hundreds of provider-friendly court orders defeating the ERISA preemption defense raised by insurance giants, at both the federal and state level, in an unbroken chain dating back to 2017.</p>
+        <blockquote>If you've been told ERISA means you can't recover, <b>you were told wrong.</b></blockquote>
+      </div>
+      <div>
+        <div class="erisa-facts">
+          <div><b>100s</b><span>of provider-friendly court orders defeating ERISA preemption</span></div>
+          <div><b>0</b><span>losses on the ERISA preemption defense</span></div>
+          <div><b>2017</b><span>unbroken chain of orders, federal and state</span></div>
+        </div>
+        <p class="disclaim">Past results do not guarantee future outcomes. Each case is evaluated on its own merits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO + FEE -->
+<section aria-labelledby="who-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Who we represent</div>
+      <h2 id="who-title">If you provide out-of-network care in Florida, we recover the full reimbursement the law provides.</h2>
+      <p>Solo practitioners, physician groups, and hospital-based departments.</p>
+    </div>
+    <div class="who">
+      <div class="who-card">
+        <h3>Specialties</h3>
+        <div class="spec">
+          <span>Emergency medicine</span>
+          <span>Anesthesiology</span>
+          <span>Surgery</span>
+          <span>Hospitalists</span>
+          <span>Radiology</span>
+          <span>Groups treating ER-admitted patients</span>
+        </div>
+      </div>
+      <div class="who-card">
+        <h3>Contingency: you pay nothing unless we recover.</h3>
+        <div class="fee">
+          <div><span>$0</span><b>Hourly billing</b></div>
+          <div><span>$0</span><b>Retainer</b></div>
+          <div><span>$0</span><b>Upfront cost</b></div>
+        </div>
+        <p class="fee-line">We get paid when you get paid.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="navy" id="review" aria-labelledby="review-title">
+  <div class="wrap contact">
+    <div>
+      <div class="eyebrow">Complimentary claims review</div>
+      <h2 id="review-title" style="font-size:clamp(30px,3.8vw,44px)">Act while the landscape favors providers.</h2>
+      <p class="urgent" style="margin-top:18px">The current landscape is extraordinarily favorable for providers, but regulatory pressure is mounting. Providers who act now recover significant revenue. Providers who wait may face a more restrictive process.</p>
+      <div class="direct">
+        <a href="tel:+18135233134"><span>(813) 523-3134</span><small>Call</small></a>
+        <a href="mailto:dansmith@forthepeople.com?subject=Claims%20review%20request"><span>dansmith@forthepeople.com</span><small>Email</small></a>
+      </div>
+      <p class="person"><b>Dan Smith, Esq.</b>Morgan &amp; Morgan Healthcare Litigation<br>Tampa, Florida</p>
+    </div>
+
+    <form class="intake" name="claims-review" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="company_url">
+      <input type="hidden" name="form-name" value="claims-review">
+      <p class="hp"><label>Leave this empty <input name="company_url" tabindex="-1" autocomplete="off"></label></p>
+      <h3>Request a claims review</h3>
+      <p>Tell us about your practice. Dan will follow up to arrange a review of your claims data.</p>
+      <div class="fields">
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-title">Title <i>(optional)</i></label><input id="f-title" name="title" autocomplete="organization-title" placeholder="e.g. CFO, Practice Manager"></div>
+        <div class="field full"><label for="f-org">Practice or organization</label><input id="f-org" name="organization" autocomplete="organization" required></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field">
+          <label for="f-spec">Specialty</label>
+          <select id="f-spec" name="specialty" required>
+            <option value="">Select…</option>
+            <option>Emergency medicine</option>
+            <option>Anesthesiology</option>
+            <option>Surgery</option>
+            <option>Hospitalist</option>
+            <option>Radiology</option>
+            <option>Hospital or health system</option>
+            <option>Multi-specialty group</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-vol">Out-of-network claims per month</label>
+          <select id="f-vol" name="monthly_oon_claims">
+            <option value="">Not sure</option>
+            <option>Under 100</option>
+            <option>100–500</option>
+            <option>500–2,000</option>
+            <option>Over 2,000</option>
+          </select>
+        </div>
+        <div class="field full"><label for="f-msg">Anything we should know? <i>(optional)</i></label><textarea id="f-msg" name="message" placeholder="Carriers you see most, billing system, IDR experience so far"></textarea></div>
+      </div>
+      <div class="phi" role="note"><b>No patient information.</b><span>Please do not include patient names, dates of service, or any other protected health information. Claims data is exchanged securely after we speak.</span></div>
+      <button class="btn btn-red" type="submit">Request my claims review</button>
+      <p class="form-note">Submitting this form does not create an attorney-client relationship. Do not send confidential information until one has been established.</p>
+      <div class="form-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <p><strong>Dan Smith, Esq.</strong></p>
+      <p>Morgan &amp; Morgan Healthcare Litigation<br>Tampa, Florida</p>
+      <p><a href="tel:+18135233134">(813) 523-3134</a><br><a href="mailto:dansmith@forthepeople.com">dansmith@forthepeople.com</a></p>
+    </div>
+    <div>
+      <p><b>Attorney advertising.</b> This website is for informational purposes only and is not legal advice. Viewing this site or contacting us does not create an attorney-client relationship. Past results do not guarantee future outcomes; each case is evaluated on its own merits, and results depend on the facts and law of each matter.</p>
+      <p>National IDR figures are drawn from publicly reported federal IDR data. Statutory references are to the Florida Statutes and are summarized, not quoted in full.</p>
+      <p>The hiring of a lawyer is an important decision that should not be based solely upon advertisements. Before you decide, ask us to send you free written information about our qualifications and experience.</p>
+      <p>© <span id="yr">2026</span> Dan Smith, Esq.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+// Submit the intake form in place; falls back to the /thanks/ page without JS.
+(function () {
+  var form = document.querySelector("form.intake");
+  var status = form.querySelector(".form-status");
+  var button = form.querySelector("button[type=submit]");
+  form.addEventListener("submit", function (e) {
+    if (!window.fetch) return;
+    e.preventDefault();
+    button.disabled = true;
+    button.textContent = "Sending…";
+    status.className = "form-status";
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString()
+    }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      form.reset();
+      status.className = "form-status ok";
+      status.textContent = "Thank you. Your request has been received, and Dan will be in touch shortly.";
+      button.textContent = "Request received";
+    }).catch(function () {
+      status.className = "form-status err";
+      status.textContent = "Something went wrong sending your request. Please call (813) 523-3134 or email dansmith@forthepeople.com.";
+      button.disabled = false;
+      button.textContent = "Request my claims review";
+    });
+  });
+})();
+</script>
+</body>
+</html>
