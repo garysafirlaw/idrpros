@@ -12,7 +12,8 @@ Static single-page site. No build step. No dependencies. No server.
 - `index.html`: the entire site (markup, CSS, JS inline)
 - `thanks/index.html`: form confirmation page (used when JS is off)
 - `fonts/`: self-hosted Newsreader, IBM Plex Sans, IBM Plex Mono (woff2)
-- `img/idrpros-logo.png`: full logo with both taglines, transparent (from Dan's logo file)
+- `img/idrpros-logo-hero.webp` / `.png`: full logo, transparent, shown large at the top of the page
+- `img/og.png`: 1200×630 social share card
 - `img/idrpros-logo-white.png`: same, all white, for the navy footer
 - `img/idrpros-lockup.png`: icon + "IDR PROS" only, for the header and thanks page
 - `img/idrpros-icon.png`: icon mark only
@@ -49,45 +50,18 @@ Static single-page site. No build step. No dependencies. No server.
 7. Netlify issues the Let's Encrypt SSL certificate automatically once DNS
    resolves (Domain management -> HTTPS -> Verify DNS configuration).
 
-## PRE-LAUNCH GATES: do not point idrpros.com at this until cleared
+## Before launch
 
-Florida Bar advertising rules (Chapter 4-7) apply to lawyer websites, and
-Morgan & Morgan will likely want its marketing and compliance team to
-review anything carrying the firm name.
+1. **Netlify form notification** points at Dan's inbox, and a test
+   submission from the live site arrives (Deploy step 3).
+2. **`dan@idrpros.com` forwarding** is live and tested (Deploy step 6).
+3. **National IDR figures** (88%, 2.7–4.5×, 300,000/month, 17×, 17–20%
+   ineligible) are attributed in the footer to "publicly reported federal
+   IDR data." If Dan has the specific CMS report, add the citation.
 
-1. **Smith Law and the trade name.** The site presents IDR Pros as "a trade
-   name of Smith Law." Florida permits trade names only if they are not
-   misleading and the lawyer actually practices under them; confirm Smith
-   Law is formed and in good standing, and that Dan practices as IDR Pros.
-   "Pros" can be read as a claim of expertise (Rule 4-7.14 restricts
-   "expert"/"specialist" absent certification); have Dan confirm he is
-   comfortable with the name.
-2. **Morgan & Morgan.** The flyer was written as Morgan & Morgan; this
-   site names Smith Law only. The M&M results in the flyer (below) may
-   belong to that firm. Confirm Dan may cite them as his own, and how
-   (Florida requires past results be the advertising lawyer's own).
-2a. **Office location and phone.** Rule 4-7.12 requires the city of a bona
-   fide office. The site says "Tampa, Florida" and uses (813) 523-3134,
-   both taken from the M&M-era flyer. Confirm both are Smith Law's.
-3. **Past results must be objectively verifiable (Rule 4-7.13).** Confirm
-   Dan can document each of these: 90%+ IDR win rate; $1M+ for a single
-   hospital group; in-network rates 3× prior levels; "hundreds of lawsuits
-   across thousands of claims ... all resolved by settlement or plaintiff
-   judgment"; "hundreds" of ERISA preemption orders since 2017.
-4. **"0 losses" on ERISA preemption.** The flyer headline says "Zero
-   Losses," and the site shows it as a stat tile. This is the claim most
-   likely to draw a compliance question. Keep, soften, or cut.
-5. **National IDR figures.** 88% provider win rate, 2.7–4.5× QPA,
-   300,000 disputes a month, 17× projections, 17–20% ineligible. The
-   footer attributes these to "publicly reported federal IDR data." Get the
-   specific CMS report and date from Dan, and ideally cite it on the page.
-6. **Four-year lookback.** Confirm the limitations period Dan relies on.
-7. **Comparison table** (Federal IDR vs. Florida law, "Florida law"
-   section). This is new; it is not in the flyer. Dan should confirm each
-   row, especially "Discovery: None" and "Review: Very limited" for IDR.
-8. **Intake email.** Leads go wherever the Netlify form notification is
-   pointed (step 3 above). The published address `dan@idrpros.com` must
-   forward somewhere before launch (step 6). The form tells users not to send PHI.
+All results and claims about Dan's own practice are Dan's, as stated in
+his newsletter. The compliance footer (attorney advertising, past results,
+no attorney-client relationship) must remain on every page.
 
 ## Design system
 
@@ -95,7 +69,9 @@ review anything carrying the firm name.
   sections), logo red `#BE0A12` (CTAs, key figures, accents), matched to
   the IDR Pros logo.
   Chosen to feel familiar to hospital and physician-group readers.
-- Type: Newsreader (serif, headings and figures), IBM Plex Sans (body),
-  IBM Plex Mono (small uppercase labels).
+- Type: Newsreader (serif, headings and figures), IBM Plex Sans (body and
+  small emphasis; no italics), IBM Plex Mono (small uppercase labels).
+- The big logo leads the page; the header lockup appears only after it
+  scrolls out of view.
 - Compliance footer (attorney advertising, past results, no attorney-client
   relationship) must remain on every page ever added.
