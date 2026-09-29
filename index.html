@@ -3,28 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dan Smith, Esq. | Out-of-Network Reimbursement Recovery for Florida Providers</title>
-<meta name="description" content="Dan Smith, Esq. of Morgan &amp; Morgan Healthcare Litigation recovers underpaid out-of-network claims for Florida physicians and hospital groups through federal IDR and Florida state court. Contingency fee. Complimentary claims review.">
+<title>IDR Pros | Out-of-Network Reimbursement Recovery for Florida Providers</title>
+<meta name="description" content="IDR Pros, serviced by Smith Law, recovers underpaid out-of-network claims for Florida physicians and hospital groups through federal IDR and Florida state court. Contingency fee. Complimentary claims review.">
 <link rel="canonical" href="https://idrpros.com/">
-<meta name="theme-color" content="#14243A">
+<meta name="theme-color" content="#FFFFFF">
 <meta property="og:type" content="website">
-<meta property="og:title" content="IDR Is Just the Beginning | Dan Smith, Esq.">
+<meta property="og:title" content="IDR Pros | Maximizing What You're Owed">
+<meta property="og:image" content="https://idrpros.com/img/idrpros-logo.png">
 <meta property="og:description" content="How Florida law recovers what IDR cannot. Out-of-network reimbursement recovery for Florida providers, on contingency.">
 <meta property="og:url" content="https://idrpros.com/">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" as="font" type="font/woff2" href="/fonts/newsreader-latin-var.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/fonts/ibm-plex-sans-latin-var.woff2" crossorigin>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Attorney",
-  "name": "Dan Smith, Esq.",
+  "@type": "LegalService",
+  "name": "IDR Pros",
+  "alternateName": "Smith Law",
+  "logo": "https://idrpros.com/img/idrpros-logo.png",
+  "slogan": "Maximizing what you're owed",
   "description": "Out-of-network reimbursement recovery for Florida healthcare providers: federal IDR and Florida state court litigation.",
   "url": "https://idrpros.com/",
   "telephone": "+1-813-523-3134",
-  "email": "dansmith@forthepeople.com",
+  "email": "dan@idrpros.com",
   "areaServed": { "@type": "State", "name": "Florida" },
-  "worksFor": { "@type": "LegalService", "name": "Morgan & Morgan", "url": "https://www.forthepeople.com/" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Tampa", "addressRegion": "FL", "addressCountry": "US" },
+  "employee": { "@type": "Attorney", "name": "Dan Smith, Esq." },
   "knowsAbout": ["No Surprises Act", "Independent Dispute Resolution", "Fla. Stat. 627.64194", "Fla. Stat. 641.513", "ERISA preemption", "Out-of-network reimbursement"]
 }
 </script>
@@ -42,8 +48,8 @@
   --navy-2: #1E3350;
   --ink: #1B2430;
   --muted: #5B6573;
-  --red: #B4232C;
-  --red-dark: #8F1B22;
+  --red: #BE0A12;
+  --red-dark: #93070D;
   --red-soft: #F6E3E1;
   --line: #DCD3C3;
   --line-navy: #2E4462;
@@ -80,9 +86,10 @@ p { margin: 0 0 1em; }
 .top-rule { height: 4px; background: var(--red); }
 header.site { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 50; }
 header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 72px; }
-.brand { text-decoration: none; display: flex; flex-direction: column; line-height: 1.15; }
+.brand { text-decoration: none; display: flex; align-items: center; gap: 18px; line-height: 1.15; }
+.brand img { height: 46px; width: auto; }
 .brand strong { font: 600 22px/1.1 var(--serif); color: var(--navy); }
-.brand span { font: 500 11px/1.4 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+.brand span { font: 500 11px/1.4 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--red-dark); padding-left: 18px; border-left: 1px solid var(--line); }
 .head-actions { display: flex; align-items: center; gap: 18px; }
 .head-phone { font: 600 16px/1 var(--sans); color: var(--navy); text-decoration: none; white-space: nowrap; }
 .head-phone:hover { color: var(--red); }
@@ -230,6 +237,7 @@ form.intake .btn { width: 100%; }
 /* Footer */
 footer.site { background: #0E1A2B; color: #9FB0C6; padding: 48px 0 40px; font-size: 13px; line-height: 1.6; }
 footer.site .wrap { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; }
+.foot-logo { width: 300px; max-width: 100%; height: auto; margin-bottom: 18px; }
 footer.site strong { color: var(--white); font-family: var(--serif); font-size: 18px; font-weight: 600; }
 footer.site p { margin: 0 0 10px; }
 footer.site a { color: #DCE3EC; }
@@ -251,8 +259,8 @@ footer.site a { color: #DCE3EC; }
   .hero .lede { font-size: 18px; }
   .head-phone { display: none; }
   header.site .wrap { min-height: 64px; }
-  .brand strong { font-size: 19px; }
-  .brand span { font-size: 10px; }
+  .brand img { height: 36px; }
+  .brand span { display: none; }
   .prongs, .fields { grid-template-columns: 1fr; }
   .flow-branch { display: none; }
   .flow-src { margin-bottom: 16px; }
@@ -271,7 +279,6 @@ footer.site a { color: #DCE3EC; }
 }
 @media (max-width: 420px) {
   header.site .btn { padding: 10px 12px; font-size: 14px; }
-  .brand span { display: none; }
 }
 </style>
 </head>
@@ -280,9 +287,9 @@ footer.site a { color: #DCE3EC; }
 <div class="top-rule"></div>
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="Dan Smith, Esq., home">
-      <strong>Dan Smith, Esq.</strong>
-      <span>Morgan &amp; Morgan · Healthcare Litigation</span>
+    <a class="brand" href="/" aria-label="IDR Pros, home">
+      <img src="/img/idrpros-lockup.png" alt="IDR Pros" width="260" height="55">
+      <span>Serviced by Smith Law</span>
     </a>
     <div class="head-actions">
       <a class="head-phone" href="tel:+18135233134">(813) 523-3134</a>
@@ -297,9 +304,9 @@ footer.site a { color: #DCE3EC; }
 <section class="hero" aria-labelledby="hero-title">
   <div class="wrap">
     <div>
-      <div class="eyebrow">Out-of-network reimbursement · Florida</div>
+      <div class="eyebrow">Maximizing what you're owed · Florida</div>
       <h1 id="hero-title">IDR is just the beginning. <em>Florida law recovers what IDR cannot.</em></h1>
-      <p class="lede">Dan Smith represents Florida physicians, physician groups, and hospital-based departments against Blue Cross, United, Cigna, Aetna, and other carriers. Every underpaid claim is pursued through federal IDR, Florida state court, or both.</p>
+      <p class="lede">IDR Pros, serviced by Dan Smith, Esq. of Smith Law, represents Florida physicians, physician groups, and hospital-based departments against Blue Cross, United, Cigna, Aetna, and other carriers. Every underpaid claim is pursued through federal IDR, Florida state court, or both.</p>
       <div class="cta-row">
         <a class="btn btn-red" href="#review">Request a complimentary claims review</a>
         <a class="btn btn-ghost" href="tel:+18135233134">Call (813) 523-3134</a>
@@ -490,9 +497,9 @@ footer.site a { color: #DCE3EC; }
       <p class="urgent" style="margin-top:18px">The current landscape is extraordinarily favorable for providers, but regulatory pressure is mounting. Providers who act now recover significant revenue. Providers who wait may face a more restrictive process.</p>
       <div class="direct">
         <a href="tel:+18135233134"><span>(813) 523-3134</span><small>Call</small></a>
-        <a href="mailto:dansmith@forthepeople.com?subject=Claims%20review%20request"><span>dansmith@forthepeople.com</span><small>Email</small></a>
+        <a href="mailto:dan@idrpros.com?subject=Claims%20review%20request"><span>dan@idrpros.com</span><small>Email</small></a>
       </div>
-      <p class="person"><b>Dan Smith, Esq.</b>Morgan &amp; Morgan Healthcare Litigation<br>Tampa, Florida</p>
+      <p class="person"><b>Dan Smith, Esq.</b>Smith Law<br>Tampa, Florida</p>
     </div>
 
     <form class="intake" name="claims-review" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="company_url">
@@ -545,15 +552,15 @@ footer.site a { color: #DCE3EC; }
 <footer class="site">
   <div class="wrap">
     <div>
-      <p><strong>Dan Smith, Esq.</strong></p>
-      <p>Morgan &amp; Morgan Healthcare Litigation<br>Tampa, Florida</p>
-      <p><a href="tel:+18135233134">(813) 523-3134</a><br><a href="mailto:dansmith@forthepeople.com">dansmith@forthepeople.com</a></p>
+      <img class="foot-logo" src="/img/idrpros-logo-white.png" alt="IDR Pros: Maximizing what you're owed. Serviced by Smith Law." width="300" height="79" loading="lazy">
+      <p><strong>Dan Smith, Esq.</strong><br>Smith Law · Tampa, Florida</p>
+      <p><a href="tel:+18135233134">(813) 523-3134</a><br><a href="mailto:dan@idrpros.com">dan@idrpros.com</a></p>
     </div>
     <div>
       <p><b>Attorney advertising.</b> This website is for informational purposes only and is not legal advice. Viewing this site or contacting us does not create an attorney-client relationship. Past results do not guarantee future outcomes; each case is evaluated on its own merits, and results depend on the facts and law of each matter.</p>
       <p>National IDR figures are drawn from publicly reported federal IDR data. Statutory references are to the Florida Statutes and are summarized, not quoted in full.</p>
       <p>The hiring of a lawyer is an important decision that should not be based solely upon advertisements. Before you decide, ask us to send you free written information about our qualifications and experience.</p>
-      <p>© <span id="yr">2026</span> Dan Smith, Esq.</p>
+      <p>IDR Pros is a trade name of Smith Law. © <span id="yr">2026</span> Smith Law.</p>
     </div>
   </div>
 </footer>
@@ -584,7 +591,7 @@ document.getElementById("yr").textContent = new Date().getFullYear();
       button.textContent = "Request received";
     }).catch(function () {
       status.className = "form-status err";
-      status.textContent = "Something went wrong sending your request. Please call (813) 523-3134 or email dansmith@forthepeople.com.";
+      status.textContent = "Something went wrong sending your request. Please call (813) 523-3134 or email dan@idrpros.com.";
       button.disabled = false;
       button.textContent = "Request my claims review";
     });
