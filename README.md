@@ -11,6 +11,8 @@ Static single-page site. No build step. No dependencies. No server.
 
 - `index.html`: the entire site (markup, CSS, JS inline)
 - `thanks/index.html`: form confirmation page (used when JS is off)
+- `es/`: Spanish page and `es/gracias/` thank-you page (see below)
+- `tools/make_es.py`: builds `es/index.html` from `index.html`
 - `fonts/`: self-hosted Newsreader, IBM Plex Sans, IBM Plex Mono (woff2)
 - `img/idrpros-logo-hero.webp` / `.png`: full logo, transparent, shown large at the top of the page
 - `img/og.png`: 1200×630 social share card
@@ -49,6 +51,19 @@ Static single-page site. No build step. No dependencies. No server.
    records at GoDaddy) and send a test message before launch.
 7. Netlify issues the Let's Encrypt SSL certificate automatically once DNS
    resolves (Domain management -> HTTPS -> Verify DNS configuration).
+
+## Spanish page (`/es/`)
+
+- `es/index.html` is **generated** from `index.html` by `tools/make_es.py`
+  (exact phrase replacement, English -> Spanish). Do not hand-edit it.
+  After any change to `index.html`, run `python3 tools/make_es.py`. If an
+  English phrase changed, the script stops and names it; update that pair
+  in the script, then rerun.
+- The Spanish form is a separate Netlify form, `claims-review-es`. Give it
+  its own email notification (Forms -> Form notifications, or one set to
+  "Any form"). Dropdown answers submit in English, so leads read the same.
+- `es/gracias/` is the Spanish thank-you page (no-JS fallback).
+- The logo image keeps its English taglines; its alt text is in Spanish.
 
 ## Before launch
 
